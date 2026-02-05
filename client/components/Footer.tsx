@@ -31,25 +31,25 @@ export default function Footer() {
             <nav className="flex flex-col gap-2">
               <Link
                 to="/"
-                className="text-sm font-semibold hover:text-secondary transition-colors hover:translate-x-1 transform duration-300"
+                className="text-sm font-semibold hover:text-red-400 transition-colors hover:translate-x-1 transform duration-300"
               >
                 → Home
               </Link>
               <Link
                 to="/products"
-                className="text-sm font-semibold hover:text-secondary transition-colors hover:translate-x-1 transform duration-300"
+                className="text-sm font-semibold hover:text-red-400 transition-colors hover:translate-x-1 transform duration-300"
               >
                 → Products
               </Link>
               <Link
                 to="/cart"
-                className="text-sm font-semibold hover:text-secondary transition-colors hover:translate-x-1 transform duration-300"
+                className="text-sm font-semibold hover:text-red-400 transition-colors hover:translate-x-1 transform duration-300"
               >
                 → Cart
               </Link>
               <Link
                 to="/contact"
-                className="text-sm font-semibold hover:text-secondary transition-colors hover:translate-x-1 transform duration-300"
+                className="text-sm font-semibold hover:text-red-400 transition-colors hover:translate-x-1 transform duration-300"
               >
                 → Contact
               </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white/20 backdrop-blur-sm rounded-xl hover:bg-white/40 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+                className="p-3 bg-red-600/30 backdrop-blur-sm rounded-xl hover:bg-red-600 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-red-600/50"
                 title="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -73,14 +73,14 @@ export default function Footer() {
                 href="https://wa.me"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white/20 backdrop-blur-sm rounded-xl hover:bg-white/40 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+                className="p-3 bg-red-600/30 backdrop-blur-sm rounded-xl hover:bg-red-600 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-red-600/50"
                 title="WhatsApp"
               >
                 <Phone className="w-5 h-5" />
               </a>
               <a
                 href="mailto:contact@campusthreads.com"
-                className="p-3 bg-white/20 backdrop-blur-sm rounded-xl hover:bg-white/40 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+                className="p-3 bg-red-600/30 backdrop-blur-sm rounded-xl hover:bg-red-600 transition-all duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-red-600/50"
                 title="Email"
               >
                 <Mail className="w-5 h-5" />
