@@ -77,7 +77,7 @@ export default function ProductGrid() {
           {FEATURED_PRODUCTS.map((product, index) => (
             <div
               key={product.id}
-              className="group relative bg-gradient-to-br from-card to-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2"
+              className="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 hover:border-red-600 transform hover:-translate-y-2"
               onMouseEnter={() => setHoveredId(product.id)}
               onMouseLeave={() => setHoveredId(null)}
               style={{
@@ -85,7 +85,7 @@ export default function ProductGrid() {
               }}
             >
               {/* Glow effect on hover */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-20 blur transition-opacity duration-500 rounded-2xl"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-black via-red-600 to-black opacity-0 group-hover:opacity-15 blur transition-opacity duration-500 rounded-2xl"></div>
 
               {/* Product Image Area */}
               <div className="relative h-72 bg-gradient-to-br from-primary/15 via-secondary/10 to-accent/15 flex items-center justify-center overflow-hidden border-b border-border/30">
