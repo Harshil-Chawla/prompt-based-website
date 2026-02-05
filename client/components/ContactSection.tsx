@@ -17,58 +17,58 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Contact Form */}
-          <div className="bg-gradient-to-br from-white to-muted rounded-2xl shadow-xl p-8 border border-border/50 hover:shadow-2xl transition-shadow duration-500">
-            <h3 className="text-3xl font-black text-foreground mb-8">
+          <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-500 hover:border-red-300">
+            <h3 className="text-3xl font-black text-black mb-8">
               ✉️ Send us a Message
             </h3>
             <form className="space-y-5">
               <div>
-                <label className="block text-sm font-bold text-foreground mb-2">
+                <label className="block text-sm font-bold text-black mb-2">
                   Name
                 </label>
                 <input
                   type="text"
                   placeholder="Your name"
-                  className="w-full px-4 py-3 border-2 border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 font-medium"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition-all duration-300 font-medium"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-foreground mb-2">
+                <label className="block text-sm font-bold text-black mb-2">
                   Email
                 </label>
                 <input
                   type="email"
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 border-2 border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 font-medium"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition-all duration-300 font-medium"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-foreground mb-2">
+                <label className="block text-sm font-bold text-black mb-2">
                   Subject
                 </label>
                 <input
                   type="text"
                   placeholder="What's this about?"
-                  className="w-full px-4 py-3 border-2 border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 font-medium"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition-all duration-300 font-medium"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-foreground mb-2">
+                <label className="block text-sm font-bold text-black mb-2">
                   Message
                 </label>
                 <textarea
                   rows={5}
                   placeholder="Tell us more..."
-                  className="w-full px-4 py-3 border-2 border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 resize-none font-medium"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition-all duration-300 resize-none font-medium"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                className="w-full py-3 bg-gradient-to-r from-black to-red-600 text-white font-bold rounded-xl hover:shadow-lg hover:shadow-red-600/50 transform hover:scale-105 transition-all duration-300"
               >
                 🚀 Submit Inquiry
               </button>
