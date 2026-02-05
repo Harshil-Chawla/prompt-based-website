@@ -73,19 +73,25 @@ export default function ProductGrid() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {FEATURED_PRODUCTS.map((product) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {FEATURED_PRODUCTS.map((product, index) => (
             <div
               key={product.id}
-              className="group relative bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-border"
+              className="group relative bg-gradient-to-br from-card to-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-border/50 hover:border-primary/50 transform hover:-translate-y-2"
               onMouseEnter={() => setHoveredId(product.id)}
               onMouseLeave={() => setHoveredId(null)}
+              style={{
+                animation: `slideUp 0.6s ease-out ${index * 0.1}s both`,
+              }}
             >
+              {/* Glow effect on hover */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-20 blur transition-opacity duration-500 rounded-2xl"></div>
+
               {/* Product Image Area */}
-              <div className="relative h-64 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center overflow-hidden">
+              <div className="relative h-72 bg-gradient-to-br from-primary/15 via-secondary/10 to-accent/15 flex items-center justify-center overflow-hidden border-b border-border/30">
                 <div
-                  className={`text-8xl transition-transform duration-300 ${
-                    hoveredId === product.id ? "scale-110" : "scale-100"
+                  className={`text-9xl transition-all duration-500 transform ${
+                    hoveredId === product.id ? "scale-125 rotate-12" : "scale-100 rotate-0"
                   }`}
                 >
                   {product.emoji}
@@ -93,45 +99,48 @@ export default function ProductGrid() {
 
                 {/* Overlay on Hover */}
                 {hoveredId === product.id && (
-                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center gap-3">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent flex items-center justify-center gap-4">
                     <button
                       onClick={() => setSelectedProduct(product)}
-                      className="p-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors"
+                      className="p-4 bg-white text-primary rounded-full hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 transform hover:scale-110 shadow-lg"
                       title="View Details"
                     >
-                      <Eye className="w-6 h-6" />
+                      <Eye className="w-7 h-7" />
                     </button>
                     <button
-                      className="p-3 bg-secondary text-secondary-foreground rounded-full hover:bg-yellow-400 transition-colors"
+                      className="p-4 bg-secondary text-secondary-foreground rounded-full hover:bg-yellow-300 transition-all duration-300 transform hover:scale-110 shadow-lg"
                       title="Add to Cart"
                     >
-                      <ShoppingCart className="w-6 h-6" />
+                      <ShoppingCart className="w-7 h-7" />
                     </button>
                   </div>
                 )}
               </div>
 
               {/* Product Info */}
-              <div className="p-4 space-y-3">
-                <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+              <div className="p-6 space-y-4 bg-gradient-to-b from-card/50 to-card">
+                <h3 className="font-bold text-xl text-foreground group-hover:text-primary transition-colors duration-300">
                   {product.name}
                 </h3>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-primary">
+                  <span className="text-3xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     ${product.price}
+                  </span>
+                  <span className="text-xs font-bold text-white bg-secondary px-3 py-1 rounded-full">
+                    In Stock
                   </span>
                 </div>
 
                 {/* Action Buttons */}
-                <div className="grid grid-cols-2 gap-2 pt-2">
+                <div className="grid grid-cols-2 gap-3 pt-3">
                   <button
                     onClick={() => setSelectedProduct(product)}
-                    className="py-2 px-3 bg-muted text-foreground rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors font-medium text-sm flex items-center justify-center gap-1"
+                    className="py-3 px-4 bg-muted text-foreground rounded-xl hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-bold text-sm flex items-center justify-center gap-1 transform hover:scale-105"
                   >
                     <Eye className="w-4 h-4" />
                     Details
                   </button>
-                  <button className="py-2 px-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium text-sm flex items-center justify-center gap-1">
+                  <button className="py-3 px-4 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-xl hover:shadow-lg transition-all duration-300 font-bold text-sm flex items-center justify-center gap-1 transform hover:scale-105">
                     <ShoppingCart className="w-4 h-4" />
                     Add
                   </button>
