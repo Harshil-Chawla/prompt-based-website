@@ -118,15 +118,15 @@ export default function ProductGrid() {
               </div>
 
               {/* Product Info */}
-              <div className="p-6 space-y-4 bg-gradient-to-b from-card/50 to-card">
-                <h3 className="font-bold text-xl text-foreground group-hover:text-primary transition-colors duration-300">
+              <div className="p-6 space-y-4 bg-gradient-to-b from-white/50 to-white">
+                <h3 className="font-bold text-xl text-foreground group-hover:text-red-600 transition-colors duration-300">
                   {product.name}
                 </h3>
                 <div className="flex items-center justify-between">
-                  <span className="text-3xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <span className="text-3xl font-black bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent">
                     ${product.price}
                   </span>
-                  <span className="text-xs font-bold text-white bg-secondary px-3 py-1 rounded-full">
+                  <span className="text-xs font-bold text-white bg-red-600 px-3 py-1 rounded-full">
                     In Stock
                   </span>
                 </div>
@@ -135,12 +135,12 @@ export default function ProductGrid() {
                 <div className="grid grid-cols-2 gap-3 pt-3">
                   <button
                     onClick={() => setSelectedProduct(product)}
-                    className="py-3 px-4 bg-muted text-foreground rounded-xl hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-bold text-sm flex items-center justify-center gap-1 transform hover:scale-105"
+                    className="py-3 px-4 bg-gray-100 text-foreground rounded-xl hover:bg-black hover:text-white transition-all duration-300 font-bold text-sm flex items-center justify-center gap-1 transform hover:scale-105"
                   >
                     <Eye className="w-4 h-4" />
                     Details
                   </button>
-                  <button className="py-3 px-4 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-xl hover:shadow-lg transition-all duration-300 font-bold text-sm flex items-center justify-center gap-1 transform hover:scale-105">
+                  <button className="py-3 px-4 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl hover:shadow-lg hover:shadow-red-600/50 transition-all duration-300 font-bold text-sm flex items-center justify-center gap-1 transform hover:scale-105">
                     <ShoppingCart className="w-4 h-4" />
                     Add
                   </button>
