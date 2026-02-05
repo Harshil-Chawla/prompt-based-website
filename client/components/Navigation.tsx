@@ -78,21 +78,21 @@ export default function Navigation() {
           <div className="md:hidden pb-4 border-t-2 border-red-600 bg-gradient-to-b from-gray-950 to-gray-900 space-y-1">
             <Link
               to="/"
-              className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/10 rounded-xl transition-all duration-300 font-semibold"
+              className="block px-4 py-3 text-gray-200 hover:text-red-500 hover:bg-red-600/10 rounded-xl transition-all duration-300 font-semibold"
               onClick={() => setMobileMenuOpen(false)}
             >
               🏠 Home
             </Link>
             <Link
               to="/products"
-              className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/10 rounded-xl transition-all duration-300 font-semibold"
+              className="block px-4 py-3 text-gray-200 hover:text-red-500 hover:bg-red-600/10 rounded-xl transition-all duration-300 font-semibold"
               onClick={() => setMobileMenuOpen(false)}
             >
               👕 Products
             </Link>
             <Link
               to="/contact"
-              className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/10 rounded-xl transition-all duration-300 font-semibold"
+              className="block px-4 py-3 text-gray-200 hover:text-red-500 hover:bg-red-600/10 rounded-xl transition-all duration-300 font-semibold"
               onClick={() => setMobileMenuOpen(false)}
             >
               📬 Contact
