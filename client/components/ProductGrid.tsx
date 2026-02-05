@@ -60,15 +60,26 @@ export default function ProductGrid() {
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-950 via-gray-900 to-black relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Animated background grid */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: "linear-gradient(0deg, transparent 24%, rgba(255, 0, 100, 0.05) 25%, rgba(255, 0, 100, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 0, 100, 0.05) 75%, rgba(255, 0, 100, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 0, 100, 0.05) 25%, rgba(255, 0, 100, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 0, 100, 0.05) 75%, rgba(255, 0, 100, 0.05) 76%, transparent 77%, transparent)",
+          backgroundSize: "50px 50px"
+        }}></div>
+      </div>
+
+      {/* Neon glow effects */}
+      <div className="absolute -top-96 -right-96 w-96 h-96 bg-red-600/20 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse"></div>
+      <div className="absolute -bottom-96 -left-96 w-96 h-96 bg-pink-600/20 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: "1s" }}></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-6 drop-shadow-sm">
-            ✨ Featured College Merchandise ✨
+          <h2 className="text-5xl sm:text-6xl font-black text-white mb-6 drop-shadow-lg" style={{fontFamily: "Clash Display"}}>
+            ✨ DRIP HARD OR GO HOME ✨
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
-            Browse our most popular college wear — comfortable, stylish, and
-            made just for campus life.
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto font-semibold">
+            Fire collection. Zero cap. Your campus deserves your style 💯
           </p>
         </div>
 
