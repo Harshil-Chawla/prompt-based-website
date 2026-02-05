@@ -43,13 +43,13 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-6">
               <Link
                 to="/products"
-                className="px-8 py-4 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 hover:shadow-2xl hover:shadow-red-600/50 transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg"
+                className="px-8 py-4 bg-gradient-to-r from-pink-600 to-red-600 text-white font-black rounded-xl hover:shadow-2xl hover:shadow-pink-600/70 transform hover:scale-110 transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg text-lg border border-pink-400/50"
               >
-                Shop Merchandise
+                LET'S GET DRIP
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
               </Link>
-              <button className="px-8 py-4 border-3 border-white text-white font-bold rounded-xl hover:bg-white/20 hover:shadow-xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm">
-                Explore Collections
+              <button className="px-8 py-4 border-2 border-pink-400 text-white font-black rounded-xl hover:bg-pink-600/20 hover:shadow-xl transform hover:scale-110 transition-all duration-300 backdrop-blur-sm text-lg">
+                CHECK COLLECTION
               </button>
             </div>
           </div>
