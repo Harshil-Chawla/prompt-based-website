@@ -88,18 +88,18 @@ export default function ProductGrid() {
           {FEATURED_PRODUCTS.map((product, index) => (
             <div
               key={product.id}
-              className="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 hover:border-red-600 transform hover:-translate-y-2"
+              className="group relative bg-gradient-to-br from-gray-900 via-gray-800 to-black rounded-2xl overflow-hidden shadow-2xl hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-pink-500 transform hover:-translate-y-3"
               onMouseEnter={() => setHoveredId(product.id)}
               onMouseLeave={() => setHoveredId(null)}
               style={{
                 animation: `slideUp 0.6s ease-out ${index * 0.1}s both`,
               }}
             >
-              {/* Glow effect on hover */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-black via-red-600 to-black opacity-0 group-hover:opacity-15 blur transition-opacity duration-500 rounded-2xl"></div>
+              {/* Neon glow effect on hover */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 via-red-600 to-purple-600 opacity-0 group-hover:opacity-40 blur transition-opacity duration-500 rounded-2xl"></div>
 
               {/* Product Image Area */}
-              <div className="relative h-72 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 flex items-center justify-center overflow-hidden border-b border-gray-200">
+              <div className="relative h-72 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 flex items-center justify-center overflow-hidden border-b-2 border-pink-500/30">
                 <div
                   className={`text-9xl transition-all duration-500 transform ${
                     hoveredId === product.id ? "scale-125 rotate-12" : "scale-100 rotate-0"
