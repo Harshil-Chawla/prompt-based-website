@@ -62,11 +62,11 @@ export default function ProductGrid() {
     <section className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Featured College Merchandise
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-6 drop-shadow-sm">
+            ✨ Featured College Merchandise ✨
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
             Browse our most popular college wear — comfortable, stylish, and
             made just for campus life.
           </p>
