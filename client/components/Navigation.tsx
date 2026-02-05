@@ -75,7 +75,7 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4 border-t-2 border-primary/20 bg-gradient-to-b from-white to-blue-50 space-y-1">
+          <div className="md:hidden pb-4 border-t-2 border-red-600 bg-gradient-to-b from-gray-950 to-gray-900 space-y-1">
             <Link
               to="/"
               className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/10 rounded-xl transition-all duration-300 font-semibold"
