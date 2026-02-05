@@ -2,7 +2,7 @@ import { Mail, Phone, Truck, RotateCcw } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-muted via-background to-muted">
+    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
