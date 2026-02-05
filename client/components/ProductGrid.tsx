@@ -274,6 +274,19 @@ export default function ProductGrid() {
           </div>
         )}
       </div>
+
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </section>
   );
 }
