@@ -23,24 +23,24 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               to="/"
-              className="text-foreground hover:text-primary transition-colors font-bold group relative"
+              className="text-gray-200 hover:text-red-500 transition-colors font-bold group relative"
             >
               Home
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-primary to-accent rounded-full group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-red-600 to-red-500 rounded-full group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
               to="/products"
-              className="text-foreground hover:text-primary transition-colors font-bold group relative"
+              className="text-gray-200 hover:text-red-500 transition-colors font-bold group relative"
             >
               Products
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-primary to-accent rounded-full group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-red-600 to-red-500 rounded-full group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
               to="/contact"
-              className="text-foreground hover:text-primary transition-colors font-bold group relative"
+              className="text-gray-200 hover:text-red-500 transition-colors font-bold group relative"
             >
               Contact
-              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-primary to-accent rounded-full group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-red-600 to-red-500 rounded-full group-hover:w-full transition-all duration-300"></span>
             </Link>
           </div>
 
