@@ -3,11 +3,11 @@ import { Instagram, Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-primary via-blue-600 to-cyan-500 text-primary-foreground relative overflow-hidden">
+    <footer className="bg-gradient-to-r from-black via-gray-900 to-red-950 text-white relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary rounded-full mix-blend-screen filter blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent rounded-full mix-blend-screen filter blur-3xl"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-red-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-700 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
