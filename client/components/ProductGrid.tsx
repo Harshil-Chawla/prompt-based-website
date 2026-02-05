@@ -129,16 +129,16 @@ export default function ProductGrid() {
               </div>
 
               {/* Product Info */}
-              <div className="p-6 space-y-4 bg-gradient-to-b from-white/50 to-white">
-                <h3 className="font-bold text-xl text-foreground group-hover:text-red-600 transition-colors duration-300">
+              <div className="p-6 space-y-4 bg-gradient-to-b from-gray-800/50 to-gray-900 relative z-10">
+                <h3 className="font-black text-xl text-white group-hover:text-pink-400 transition-colors duration-300" style={{fontFamily: "Space Grotesk"}}>
                   {product.name}
                 </h3>
                 <div className="flex items-center justify-between">
-                  <span className="text-3xl font-black bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent">
+                  <span className="text-3xl font-black bg-gradient-to-r from-pink-500 via-red-500 to-orange-500 bg-clip-text text-transparent">
                     ${product.price}
                   </span>
-                  <span className="text-xs font-bold text-white bg-red-600 px-3 py-1 rounded-full">
-                    In Stock
+                  <span className="text-xs font-black text-white bg-gradient-to-r from-pink-600 to-red-600 px-3 py-1 rounded-full animate-pulse">
+                    🔥 FIRE
                   </span>
                 </div>
 
@@ -146,14 +146,14 @@ export default function ProductGrid() {
                 <div className="grid grid-cols-2 gap-3 pt-3">
                   <button
                     onClick={() => setSelectedProduct(product)}
-                    className="py-3 px-4 bg-gray-100 text-foreground rounded-xl hover:bg-black hover:text-white transition-all duration-300 font-bold text-sm flex items-center justify-center gap-1 transform hover:scale-105"
+                    className="py-3 px-4 bg-gray-700 text-white rounded-xl hover:bg-gradient-to-r hover:from-pink-600 hover:to-red-600 transition-all duration-300 font-black text-sm flex items-center justify-center gap-1 transform hover:scale-110 hover:shadow-lg hover:shadow-pink-600/50"
                   >
                     <Eye className="w-4 h-4" />
-                    Details
+                    DETAILS
                   </button>
-                  <button className="py-3 px-4 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl hover:shadow-lg hover:shadow-red-600/50 transition-all duration-300 font-bold text-sm flex items-center justify-center gap-1 transform hover:scale-105">
+                  <button className="py-3 px-4 bg-gradient-to-r from-pink-600 to-red-600 text-white rounded-xl hover:shadow-xl hover:shadow-pink-600/70 transition-all duration-300 font-black text-sm flex items-center justify-center gap-1 transform hover:scale-110 border border-pink-400/50">
                     <ShoppingCart className="w-4 h-4" />
-                    Add
+                    ADD
                   </button>
                 </div>
               </div>
