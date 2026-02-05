@@ -48,20 +48,20 @@ export default function Navigation() {
           <div className="flex items-center gap-4">
             <Link
               to="/cart"
-              className="relative p-2 text-foreground hover:text-primary transition-colors transform hover:scale-110 duration-300 group"
+              className="relative p-2 text-gray-200 hover:text-red-500 transition-colors transform hover:scale-110 duration-300 group"
               title="Shopping Cart"
             >
-              <div className="p-2 rounded-lg group-hover:bg-primary/10 transition-colors duration-300">
+              <div className="p-2 rounded-lg group-hover:bg-red-600/10 transition-colors duration-300">
                 <ShoppingCart className="w-6 h-6" />
               </div>
-              <span className="absolute top-0 right-0 w-5 h-5 bg-gradient-to-r from-secondary to-yellow-300 text-secondary-foreground text-xs rounded-full flex items-center justify-center font-black shadow-lg animate-pulse">
+              <span className="absolute top-0 right-0 w-5 h-5 bg-gradient-to-r from-red-600 to-red-500 text-white text-xs rounded-full flex items-center justify-center font-black shadow-lg animate-pulse">
                 0
               </span>
             </Link>
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-2 text-foreground hover:text-primary transition-colors transform hover:scale-110 duration-300"
+              className="md:hidden p-2 text-gray-200 hover:text-red-500 transition-colors transform hover:scale-110 duration-300"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? (
