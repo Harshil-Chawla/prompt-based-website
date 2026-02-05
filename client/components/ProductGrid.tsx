@@ -62,20 +62,30 @@ export default function ProductGrid() {
     <section className="py-20 bg-gradient-to-br from-gray-950 via-gray-900 to-black relative overflow-hidden">
       {/* Animated background grid */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: "linear-gradient(0deg, transparent 24%, rgba(255, 0, 100, 0.05) 25%, rgba(255, 0, 100, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 0, 100, 0.05) 75%, rgba(255, 0, 100, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 0, 100, 0.05) 25%, rgba(255, 0, 100, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 0, 100, 0.05) 75%, rgba(255, 0, 100, 0.05) 76%, transparent 77%, transparent)",
-          backgroundSize: "50px 50px"
-        }}></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "linear-gradient(0deg, transparent 24%, rgba(255, 0, 100, 0.05) 25%, rgba(255, 0, 100, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 0, 100, 0.05) 75%, rgba(255, 0, 100, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 0, 100, 0.05) 25%, rgba(255, 0, 100, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 0, 100, 0.05) 75%, rgba(255, 0, 100, 0.05) 76%, transparent 77%, transparent)",
+            backgroundSize: "50px 50px",
+          }}
+        ></div>
       </div>
 
       {/* Neon glow effects */}
       <div className="absolute -top-96 -right-96 w-96 h-96 bg-red-600/20 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse"></div>
-      <div className="absolute -bottom-96 -left-96 w-96 h-96 bg-pink-600/20 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: "1s" }}></div>
+      <div
+        className="absolute -bottom-96 -left-96 w-96 h-96 bg-pink-600/20 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-pulse"
+        style={{ animationDelay: "1s" }}
+      ></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-black text-white mb-6 drop-shadow-lg" style={{fontFamily: "Clash Display"}}>
+          <h2
+            className="text-5xl sm:text-6xl font-black text-white mb-6 drop-shadow-lg"
+            style={{ fontFamily: "Clash Display" }}
+          >
             ✨ DRIP HARD OR GO HOME ✨
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto font-semibold">
@@ -102,7 +112,9 @@ export default function ProductGrid() {
               <div className="relative h-72 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 flex items-center justify-center overflow-hidden border-b-2 border-pink-500/30">
                 <div
                   className={`text-9xl transition-all duration-500 transform ${
-                    hoveredId === product.id ? "scale-125 rotate-12" : "scale-100 rotate-0"
+                    hoveredId === product.id
+                      ? "scale-125 rotate-12"
+                      : "scale-100 rotate-0"
                   }`}
                 >
                   {product.emoji}
@@ -130,7 +142,10 @@ export default function ProductGrid() {
 
               {/* Product Info */}
               <div className="p-6 space-y-4 bg-gradient-to-b from-gray-800/50 to-gray-900 relative z-10">
-                <h3 className="font-black text-xl text-white group-hover:text-pink-400 transition-colors duration-300" style={{fontFamily: "Space Grotesk"}}>
+                <h3
+                  className="font-black text-xl text-white group-hover:text-pink-400 transition-colors duration-300"
+                  style={{ fontFamily: "Space Grotesk" }}
+                >
                   {product.name}
                 </h3>
                 <div className="flex items-center justify-between">

@@ -7,16 +7,26 @@ export default function HeroSection() {
       {/* Animated Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-96 h-96 bg-red-600 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-700 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" style={{ animationDelay: "1s" }}></div>
-        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl opacity-25 animate-pulse" style={{ animationDelay: "2s" }}></div>
+        <div
+          className="absolute bottom-0 left-0 w-96 h-96 bg-red-700 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-1/2 w-96 h-96 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl opacity-25 animate-pulse"
+          style={{ animationDelay: "2s" }}
+        ></div>
       </div>
 
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: "linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent)",
-          backgroundSize: "50px 50px"
-        }}></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent)",
+            backgroundSize: "50px 50px",
+          }}
+        ></div>
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +38,13 @@ export default function HeroSection() {
                 <Sparkles className="w-4 h-4" />
                 <span>NO CAP. THE DRIP IS REAL.</span>
               </div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-tight drop-shadow-2xl" style={{fontFamily: "Clash Display", letterSpacing: "-0.02em"}}>
+              <h1
+                className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-tight drop-shadow-2xl"
+                style={{
+                  fontFamily: "Clash Display",
+                  letterSpacing: "-0.02em",
+                }}
+              >
                 FIT CHECK ✅
               </h1>
               <p className="text-2xl sm:text-3xl text-pink-300 font-black drop-shadow-lg">
@@ -36,7 +52,8 @@ export default function HeroSection() {
               </p>
             </div>
             <p className="text-lg sm:text-xl text-gray-300 max-w-lg drop-shadow-md font-semibold">
-              Fire college hoodies, tees & accessories that hit different. Made for students who actually have style. Not mid. Not cap. 💯
+              Fire college hoodies, tees & accessories that hit different. Made
+              for students who actually have style. Not mid. Not cap. 💯
             </p>
 
             {/* CTA Buttons */}
@@ -79,7 +96,9 @@ export default function HeroSection() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="flex flex-col items-center gap-2 text-primary-foreground">
-            <span className="text-sm font-bold drop-shadow-md">Scroll to explore</span>
+            <span className="text-sm font-bold drop-shadow-md">
+              Scroll to explore
+            </span>
             <svg
               className="w-6 h-6 animate-pulse"
               fill="none"
