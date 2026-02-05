@@ -88,7 +88,7 @@ export default function ProductGrid() {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-black via-red-600 to-black opacity-0 group-hover:opacity-15 blur transition-opacity duration-500 rounded-2xl"></div>
 
               {/* Product Image Area */}
-              <div className="relative h-72 bg-gradient-to-br from-primary/15 via-secondary/10 to-accent/15 flex items-center justify-center overflow-hidden border-b border-border/30">
+              <div className="relative h-72 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 flex items-center justify-center overflow-hidden border-b border-gray-200">
                 <div
                   className={`text-9xl transition-all duration-500 transform ${
                     hoveredId === product.id ? "scale-125 rotate-12" : "scale-100 rotate-0"
@@ -99,16 +99,16 @@ export default function ProductGrid() {
 
                 {/* Overlay on Hover */}
                 {hoveredId === product.id && (
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent flex items-center justify-center gap-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-center justify-center gap-4">
                     <button
                       onClick={() => setSelectedProduct(product)}
-                      className="p-4 bg-white text-primary rounded-full hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 transform hover:scale-110 shadow-lg"
+                      className="p-4 bg-white text-black rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-lg"
                       title="View Details"
                     >
                       <Eye className="w-7 h-7" />
                     </button>
                     <button
-                      className="p-4 bg-secondary text-secondary-foreground rounded-full hover:bg-yellow-300 transition-all duration-300 transform hover:scale-110 shadow-lg"
+                      className="p-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
                       title="Add to Cart"
                     >
                       <ShoppingCart className="w-7 h-7" />
