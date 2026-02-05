@@ -59,7 +59,7 @@ export default function ProductGrid() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-20 bg-gradient-to-br from-gray-950 via-gray-900 to-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
