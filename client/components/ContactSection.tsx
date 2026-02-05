@@ -78,16 +78,16 @@ export default function ContactSection() {
           {/* Order Info & Support */}
           <div className="space-y-6">
             {/* Delivery Timeline */}
-            <div className="bg-gradient-to-br from-white to-muted rounded-2xl shadow-lg p-6 border border-border/50 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1">
+            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 hover:border-red-300">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 p-4 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
-                  <Truck className="w-6 h-6 text-primary font-bold" />
+                <div className="flex-shrink-0 p-4 bg-gradient-to-br from-red-100 to-red-50 rounded-xl">
+                  <Truck className="w-6 h-6 text-red-600 font-bold" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-foreground mb-2">
+                  <h4 className="text-xl font-bold text-black mb-2">
                     🚚 Delivery Timeline
                   </h4>
-                  <p className="text-muted-foreground text-sm font-medium">
+                  <p className="text-gray-600 text-sm font-medium">
                     Standard delivery: 5-7 business days. Express shipping
                     available for orders placed before 2 PM.
                   </p>
@@ -96,16 +96,16 @@ export default function ContactSection() {
             </div>
 
             {/* Return Policy */}
-            <div className="bg-gradient-to-br from-white to-muted rounded-2xl shadow-lg p-6 border border-border/50 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1">
+            <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 hover:border-red-300">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 p-4 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl">
-                  <RotateCcw className="w-6 h-6 text-accent font-bold" />
+                <div className="flex-shrink-0 p-4 bg-gradient-to-br from-red-100 to-red-50 rounded-xl">
+                  <RotateCcw className="w-6 h-6 text-red-600 font-bold" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-foreground mb-2">
+                  <h4 className="text-xl font-bold text-black mb-2">
                     ↩️ Return Policy
                   </h4>
-                  <p className="text-muted-foreground text-sm font-medium">
+                  <p className="text-gray-600 text-sm font-medium">
                     30-day return policy on all items. Items must be in original
                     condition with tags attached. Free returns on campus.
                   </p>
@@ -114,18 +114,18 @@ export default function ContactSection() {
             </div>
 
             {/* Direct Contact */}
-            <div className="bg-gradient-to-br from-primary via-blue-600 to-cyan-500 text-primary-foreground rounded-2xl shadow-xl p-6 space-y-5 border border-white/20">
+            <div className="bg-gradient-to-br from-black via-gray-900 to-red-950 text-white rounded-2xl shadow-xl p-6 space-y-5 border border-red-600">
               <h4 className="text-2xl font-black">📞 Direct Contact</h4>
 
               <div className="flex items-center gap-3">
-                <div className="p-3 bg-white/20 rounded-lg">
+                <div className="p-3 bg-red-600/30 rounded-lg">
                   <Mail className="w-5 h-5 flex-shrink-0" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold opacity-90">Email</p>
                   <a
                     href="mailto:contact@campusthreads.com"
-                    className="hover:underline font-bold drop-shadow-sm"
+                    className="hover:text-red-400 font-bold drop-shadow-sm transition-colors"
                   >
                     contact@campusthreads.com
                   </a>
@@ -133,7 +133,7 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="p-3 bg-white/20 rounded-lg">
+                <div className="p-3 bg-red-600/30 rounded-lg">
                   <Phone className="w-5 h-5 flex-shrink-0" />
                 </div>
                 <div>
@@ -142,14 +142,14 @@ export default function ContactSection() {
                     href="https://wa.me"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline font-bold drop-shadow-sm"
+                    className="hover:text-red-400 font-bold drop-shadow-sm transition-colors"
                   >
                     +1 (555) 123-4567
                   </a>
                 </div>
               </div>
 
-              <div className="border-t border-white/20 pt-4">
+              <div className="border-t border-red-600/30 pt-4">
                 <p className="text-sm font-medium opacity-90">
                   💼 For bulk orders and campus partnerships, we offer special
                   discounts. Get in touch!
