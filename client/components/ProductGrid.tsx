@@ -152,15 +152,15 @@ export default function ProductGrid() {
 
         {/* Product Detail Modal */}
         {selectedProduct && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
-            <div className="bg-background rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="sticky top-0 flex justify-between items-center p-6 border-b border-border bg-background">
-                <h2 className="text-2xl font-bold text-foreground">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60">
+            <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+              <div className="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 bg-gradient-to-r from-gray-50 to-white">
+                <h2 className="text-3xl font-black text-black">
                   Product Details
                 </h2>
                 <button
                   onClick={() => setSelectedProduct(null)}
-                  className="text-2xl text-muted-foreground hover:text-foreground"
+                  className="text-3xl text-gray-400 hover:text-black transition-colors"
                 >
                   ✕
                 </button>
@@ -170,7 +170,7 @@ export default function ProductGrid() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {/* Product Image */}
                   <div className="flex flex-col gap-4">
-                    <div className="h-96 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-lg flex items-center justify-center">
+                    <div className="h-96 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 rounded-lg flex items-center justify-center border border-gray-200">
                       <div className="text-9xl">{selectedProduct.emoji}</div>
                     </div>
                   </div>
@@ -178,21 +178,21 @@ export default function ProductGrid() {
                   {/* Product Information */}
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-3xl font-bold text-foreground mb-2">
+                      <h3 className="text-3xl font-black text-black mb-2">
                         {selectedProduct.name}
                       </h3>
-                      <p className="text-lg text-muted-foreground">
+                      <p className="text-lg text-gray-600">
                         Premium college merchandise for students who value
                         quality and style.
                       </p>
                     </div>
 
                     <div className="space-y-3">
-                      <div className="text-4xl font-bold text-primary">
+                      <div className="text-4xl font-black bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent">
                         ${selectedProduct.price}
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="text-sm font-medium text-muted-foreground">
+                        <span className="text-sm font-semibold text-gray-600">
                           In Stock
                         </span>
                         <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -201,14 +201,14 @@ export default function ProductGrid() {
 
                     {/* Size Selection */}
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-3">
+                      <label className="block text-sm font-bold text-black mb-3">
                         Size
                       </label>
                       <div className="grid grid-cols-4 gap-2">
                         {["XS", "S", "M", "L", "XL", "2XL"].map((size) => (
                           <button
                             key={size}
-                            className="py-2 px-3 border-2 border-border rounded-lg hover:border-primary hover:text-primary transition-colors font-semibold"
+                            className="py-2 px-3 border-2 border-gray-300 rounded-lg hover:border-red-600 hover:bg-red-50 hover:text-red-600 transition-colors font-semibold"
                           >
                             {size}
                           </button>
@@ -218,24 +218,24 @@ export default function ProductGrid() {
 
                     {/* Color Selection */}
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-3">
+                      <label className="block text-sm font-bold text-black mb-3">
                         Color
                       </label>
                       <div className="flex gap-3">
                         <button
-                          className="w-10 h-10 rounded-full bg-primary hover:ring-2 ring-primary/50 transition-all"
-                          title="Blue"
-                        ></button>
-                        <button
-                          className="w-10 h-10 rounded-full bg-secondary hover:ring-2 ring-secondary/50 transition-all"
-                          title="Gold"
-                        ></button>
-                        <button
-                          className="w-10 h-10 rounded-full bg-gray-900 hover:ring-2 ring-gray-900/50 transition-all"
+                          className="w-10 h-10 rounded-full bg-black hover:ring-2 ring-black/30 transition-all"
                           title="Black"
                         ></button>
                         <button
-                          className="w-10 h-10 rounded-full bg-white border-2 border-border hover:ring-2 ring-gray-400/50 transition-all"
+                          className="w-10 h-10 rounded-full bg-red-600 hover:ring-2 ring-red-600/30 transition-all"
+                          title="Red"
+                        ></button>
+                        <button
+                          className="w-10 h-10 rounded-full bg-gray-900 hover:ring-2 ring-gray-900/30 transition-all"
+                          title="Dark Gray"
+                        ></button>
+                        <button
+                          className="w-10 h-10 rounded-full bg-white border-2 border-gray-300 hover:ring-2 ring-gray-300/50 transition-all"
                           title="White"
                         ></button>
                       </div>
@@ -243,27 +243,27 @@ export default function ProductGrid() {
 
                     {/* Quantity Selector */}
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-3">
+                      <label className="block text-sm font-bold text-black mb-3">
                         Quantity
                       </label>
-                      <div className="flex items-center border border-border rounded-lg w-fit">
-                        <button className="px-4 py-2 text-lg hover:bg-muted transition-colors">
+                      <div className="flex items-center border border-gray-300 rounded-lg w-fit">
+                        <button className="px-4 py-2 text-lg hover:bg-gray-100 transition-colors">
                           −
                         </button>
                         <input
                           type="number"
                           defaultValue="1"
                           min="1"
-                          className="w-12 text-center border-l border-r border-border outline-none"
+                          className="w-12 text-center border-l border-r border-gray-300 outline-none"
                         />
-                        <button className="px-4 py-2 text-lg hover:bg-muted transition-colors">
+                        <button className="px-4 py-2 text-lg hover:bg-gray-100 transition-colors">
                           +
                         </button>
                       </div>
                     </div>
 
                     {/* CTA Button */}
-                    <button className="w-full py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center gap-2 group">
+                    <button className="w-full py-3 bg-gradient-to-r from-black to-red-600 text-white font-bold rounded-xl hover:shadow-lg hover:shadow-red-600/50 transition-all flex items-center justify-center gap-2 group">
                       <ShoppingCart className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       Add to Cart
                     </button>
