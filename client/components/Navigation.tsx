@@ -6,13 +6,13 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-gradient-to-r from-white via-blue-50 to-cyan-50 shadow-lg border-b-2 border-primary/20 backdrop-blur-sm">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-gray-950 via-black to-gray-900 shadow-2xl border-b-2 border-red-600 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow duration-300 transform group-hover:scale-110">
-              <span className="text-primary-foreground font-black text-lg">C</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-red-600/50 group-hover:shadow-2xl transition-shadow duration-300 transform group-hover:scale-110">
+              <span className="text-white font-black text-lg">C</span>
             </div>
             <span className="hidden sm:inline font-black text-xl text-primary drop-shadow-sm">
               CampusThreads
