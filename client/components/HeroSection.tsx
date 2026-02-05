@@ -24,17 +24,19 @@ export default function HeroSection() {
           {/* Content */}
           <div className="space-y-8 text-center md:text-left">
             <div className="space-y-4 animate-fadeInUp">
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-primary-foreground/90 border border-white/20">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-600/30 to-red-600/30 backdrop-blur-md px-4 py-2 rounded-full text-white border border-pink-400/50 font-black text-sm">
                 <Sparkles className="w-4 h-4" />
-                <span className="text-sm font-medium">Welcome to CampusThreads</span>
+                <span>NO CAP. THE DRIP IS REAL.</span>
               </div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-primary-foreground leading-tight drop-shadow-lg">
-                Wear Your Campus Pride 👕🎓
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-tight drop-shadow-2xl" style={{fontFamily: "Clash Display", letterSpacing: "-0.02em"}}>
+                FIT CHECK ✅
               </h1>
+              <p className="text-2xl sm:text-3xl text-pink-300 font-black drop-shadow-lg">
+                Your Campus, Your Style, Your Vibe 🔥
+              </p>
             </div>
-            <p className="text-lg sm:text-xl text-primary-foreground/95 max-w-lg drop-shadow-md font-medium">
-              Discover official college hoodies, T-shirts, and accessories
-              designed for students who love representing their campus in style.
+            <p className="text-lg sm:text-xl text-gray-300 max-w-lg drop-shadow-md font-semibold">
+              Fire college hoodies, tees & accessories that hit different. Made for students who actually have style. Not mid. Not cap. 💯
             </p>
 
             {/* CTA Buttons */}
