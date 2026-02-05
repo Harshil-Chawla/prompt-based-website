@@ -15,12 +15,12 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-primary font-black text-lg">C</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-xl flex items-center justify-center shadow-lg shadow-red-600/50">
+                <span className="text-white font-black text-lg">C</span>
               </div>
               <h3 className="font-black text-2xl drop-shadow-md">CampusThreads</h3>
             </div>
-            <p className="text-sm font-semibold opacity-95">
+            <p className="text-sm font-semibold opacity-90">
               🎓 Proudly designed for students, by students.
             </p>
           </div>
